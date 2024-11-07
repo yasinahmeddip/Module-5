@@ -26,7 +26,6 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
-    letter-spacing: 0%;
     text-align: center;
     opacity: 0.8;
     margin-bottom: 16px;
@@ -38,7 +37,6 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
-    letter-spacing: 0%;
     text-align: center;
     margin-bottom: 24px;
 }
@@ -49,7 +47,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: 0%;
     text-align: center;
     opacity: 0.7;
     margin-bottom: 32px;
@@ -66,7 +63,6 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
-    letter-spacing: 0%;
     text-align: center;
     border-radius: 8px;
     background: rgb(82, 195, 3);
@@ -100,7 +96,6 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;
-    letter-spacing: 0%;
     text-align: center;
     margin-bottom: 48px;
 }
@@ -149,7 +144,6 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 47px;
-    letter-spacing: 0%;
     text-align: center;
     margin: 24px 0px;
     margin-bottom: 24px;
@@ -190,49 +184,76 @@
 
 .about-text h1 {
     font-family: Work Sans;
-font-size: 48px;
-font-weight: 700;
-line-height: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
 }
 
 .about-text p {
     font-family: Work Sans;
-font-size: 24px;
-font-weight: 500;
-line-height: 28px;
-opacity: 0.6;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.6;
 }
 
 .about-text h3 {
     font-family: Work Sans;
-font-size: 32px;
-font-weight: 600;
-line-height: 38px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
 }
-.about-list ul{
+
+.about-list ul {
     display: flex;
     flex-direction: row;
 }
-.about-list ul li{
+
+.about-list ul li {
     list-style: none;
-    padding-left: 30px;
-    font-size: 25px;
+    padding: 0px 20px;
+    font-size: 32px;
 }
+
 .about-list ul li a {
     text-decoration: none;
 }
 
-
 .social{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0px;
+
+
+}
+
+.social::before {
+    content: "";
+    background-image: url(../assets/social-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 136px 53px 137px 53px;
     width: 1932px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 
 }
-.social-text{
+
+.social-text {
     width: 830px;
     display: flex;
     flex-direction: column;
@@ -240,37 +261,48 @@ line-height: 38px;
     justify-content: center;
     text-align: center;
     gap: 25px;
+    position: relative;
 }
+
 .social-text h1 {
     font-family: Work Sans;
-font-size: 48px;
-font-weight: 700;
-line-height: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    position: relative;
 }
 
 .social-text p {
     font-family: Work Sans;
-font-size: 24px;
-font-weight: 500;
-line-height: 28px;
-opacity: 0.6;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.6;
+    position: relative;
 }
 
 .social-text h3 {
     font-family: Work Sans;
-font-size: 32px;
-font-weight: 600;
-line-height: 38px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    position: relative;
 }
-.about-list ul{
+
+.about-list ul {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
-.about-list ul li{
+
+.about-list ul li {
     list-style: none;
-    padding-left: 30px;
-    font-size: 25px;
+    padding: 0px 20px;
+    font-size: 30px;
+    position: relative;
 }
+
 .about-list ul li a {
     text-decoration: none;
+    position: relative;
 }
